@@ -1,0 +1,63 @@
+.qoute{
+    display: flex;
+}
+.qoute form.quote__form {
+    background-color: white;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgba(197, 197, 197, 0.597);
+    margin: 40px auto;
+    padding: 90px 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-radius: 30px;
+}
+
+.qoute form.quote__form .quote__label {
+    font-size: 20px;
+}
+
+.qoute form.quote__form .quote__input {
+    width: 100%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgba(197, 197, 197, 0.597);
+    border-radius: 10px;
+}
+
+.qoute form.quote__form .quote__input-input {
+    height: 30px;
+}
+
+.qoute form.quote__form .quote__input-textarea {
+    height: 90px;
+    resize: none;
+}
+
+.qoute form.quote__form .quote__button {
+    background: linear-gradient(50deg, #ee9032, #f16d52, #ec4a77, #a063aa, #7963aa, #4b6eb5, #109aaf, #07b89f, #6bb97f);
+    padding: 20px ;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    background-size: 400% 400%;
+}
+
+.qoute form.quote__form .quote__button:hover {
+    animation: movinggradient 50s infinite;
+}
+
+@keyframes movinggradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+

@@ -1,0 +1,34 @@
+<div class="qoute">
+  <form class="quote__form"  [formGroup]="quoteForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label class="quote__label" for="name">App Name:</label>
+      <input type="text" class="quote__input quote__input-input" formControlName="name">
+      <div *ngIf="quoteForm.get('name')?.invalid && (quoteForm.get('name')?.dirty || quoteForm.get('name')?.touched)">
+        <div *ngIf="quoteForm.get('name')?.errors">App Name is required.</div>
+      </div>
+    </div>
+    <div>
+      <label class="quote__label" for="email">Email:</label>
+      <input type="email" class="quote__input quote__input-input" formControlName="email">
+      <div *ngIf="quoteForm.get('email')?.invalid && (quoteForm.get('email')?.dirty || quoteForm.get('email')?.touched)">
+        <div *ngIf="quoteForm.get('email')?.errors">Email is required.</div>
+        <div *ngIf="quoteForm.get('email')?.errors">Please enter a valid email address.</div>
+      </div>
+    </div>
+    <div>
+      <label class="quote__label" for="coreFeatures">Core Features:</label>
+      <textarea type="text" class="quote__input quote__input-textarea" formControlName="coreFeatures"></textarea>
+      <div *ngIf="quoteForm.get('coreFeatures')?.invalid && (quoteForm.get('coreFeatures')?.dirty || quoteForm.get('coreFeatures')?.touched)">
+        <div *ngIf="quoteForm.get('coreFeatures')?.errors">Core Features are required.</div>
+      </div>
+    </div>
+    <div>
+      <label class="quote__label" for="description">Description:</label>
+      <textarea type="text" class="quote__input quote__input-textarea" formControlName="description"></textarea>
+      <div *ngIf="quoteForm.get('description')?.invalid && (quoteForm.get('description')?.dirty || quoteForm.get('description')?.touched)">
+        <div *ngIf="quoteForm.get('description')?.errors">Description is required.</div>
+      </div>
+    </div>
+    <button class="quote__button" type="submit" [disabled]="quoteForm.invalid">Send</button>
+  </form>
+</div>

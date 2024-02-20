@@ -1,0 +1,17 @@
+<div>
+    <h2 id="work-title"> Work Experience</h2>
+    <div class="workContainer" *ngFor="let work of Work">
+        <img src="../../../assets/images/plus.png" alt="" class="line">
+        <div class="workcontainer__content">
+        <div class="title">{{work.title}}</div>
+        <div class="workContainer-line"></div>
+        <div class="workContainer__company">Company: {{work.company}}</div>
+        <div class="workContainer__dates">
+
+            {{work.startDate}} <div class="workContainer__dates-line"></div> {{work.endDate}}
+
+        </div>
+        <div class="workContainer__content">{{work.content}}</div>
+    </div>
+    </div>
+</div>

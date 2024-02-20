@@ -1,0 +1,54 @@
+
+.workContainer{
+    position: relative;
+ width: 70%;
+padding: 20px;
+padding-left: 70px;
+ margin: 10px auto;
+ display: flex;
+ border-radius: 20px;
+ box-shadow: 4px 4px rgba(197, 197, 197, 0.355);
+ transition: transform 0.8s;
+
+}
+.workContainer:hover{
+    transform: scale(1.01);
+}
+.workContainer:hover  .line {
+    transform: rotate(90deg);
+}
+.title{
+    font-size: 25px;
+}
+.workContainer__dates{
+    margin: 10px 0px;
+display: flex;
+}
+.workContainer__dates-line{
+ height: 2px;
+ width: 10px;
+ background-color: gray;
+ margin: auto 5px;
+}
+.workContainer__content{
+ width: 80%;
+}
+.workContainer__company{
+    padding: 10px;
+    padding-left: 0px;
+}
+#work-title{
+    padding-left: 70px;
+    margin: 10px 0px;
+}
+.workcontainer__content{
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    height: 30px;
+    width: 30px;
+    margin: auto 24px;
+    padding: 0px;
+    transition: transform 0.8s ease;
+}

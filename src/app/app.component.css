@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    .app{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    main {
+        flex-grow: 1; /* Allow the main content to grow and take up remaining space */
+      }
+app-header{
+    width: 100%;
+}
+app-footer{
+ margin-top: auto;
+}

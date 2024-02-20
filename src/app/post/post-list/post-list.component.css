@@ -1,0 +1,8 @@
+:host{
+    margin-top: 1rem;
+    display: block;
+}
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+}

@@ -56,3 +56,27 @@ color: white;
 .read-more__button:hover{
     background-color: rgba(119, 119, 119, 0.342);
 }
+
+@media(max-width: 400px) {
+  .top-section{
+    flex-direction: column;
+    margin: auto auto;
+  }
+  .image_section{
+        margin: auto;
+        width: 100%;
+  }
+  .title{
+    font-size: 25px;
+    margin: 0px;
+    width: fit-content;
+    margin: 0px auto;
+  }
+  .read-more{
+margin: 0px auto;
+  }
+  .read-more__p{
+    font-size: small;
+    width: 100%;
+  }
+}

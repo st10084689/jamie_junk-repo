@@ -42,3 +42,21 @@ padding-top: 20px;
     cursor: pointer;
     transform: scale(1.5);
 }
+
+@media(max-width: 400px) {
+    .footer{
+       margin: 0px auto; 
+    }
+    .footer__top{
+
+    }
+    .footer__horizontal-line{
+        width: 50px;
+    }
+    .footer__icons{
+
+    }
+    .footer__icon{
+
+    }
+}

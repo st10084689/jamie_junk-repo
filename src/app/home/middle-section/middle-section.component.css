@@ -95,4 +95,31 @@
         margin: auto 0px;
         margin-right: 200px;
     }
+
+    @media(max-width: 400px) {
+        .cv{
+           margin: 0px auto;
+        }
+        .cv-prompt{
+            
+        }
+        .cv__button{
+
+        }
+        .read-more__icons{
+
+        }
+        .read-more__icon{
+
+        }
+        .read-more__img{
+
+        }
+        .about__image{
+            display: none;
+        }
+        #jamie-image{
+                display: none;
+        }
+    }
     

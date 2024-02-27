@@ -28,7 +28,7 @@ export class QouteComponent {
       if (this.quoteForm.valid) {
         const emailData = this.quoteForm.value;
   
-        this.http.post('http://localhost:3000/send-email', emailData)
+        this.http.post('https://jamie-repo.azurewebsites.net/send-email', emailData)
           .subscribe(
             (response) => {
               console.log('Email sent successfully!', response);

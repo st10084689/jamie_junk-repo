@@ -11,7 +11,7 @@ export class MiddleSectionComponent {
   constructor(private http: HttpClient) { }
 
   downloadPdf(){
-  const pdfUrl = '../../../assets/Cv.pdf';
+  const pdfUrl = './assets/Cv.pdf';
 
   this.http.get(pdfUrl, {responseType: 'blob'}).subscribe((res:any)=>
   {

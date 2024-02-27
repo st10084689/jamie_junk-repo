@@ -12,7 +12,7 @@ export class WorkExperienceService{
 getPosts() {
     this.http
       .get<{ message: string; work: any }>(
-        "http://localhost:3000/api/work"
+        "https://jamie-repo.azurewebsites.net/api/work"
       )
       .pipe(map((workData) => {
         return workData.work.map((work: { title: any; company:any; startDate: any; endDate: any; content: any; _id: any; }) => {
